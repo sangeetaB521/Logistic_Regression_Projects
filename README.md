@@ -8,41 +8,38 @@ This repository contains machine learning models using **Logistic Regression** f
 
 - [`Advertisement.ipynb`](./Advertisement.ipynb): Predict whether a user clicks on an online advertisement.
 - [`Housingrent.ipynb`](./Housingrent.ipynb): Predict housing rent category using logistic regression (classification approach).
+- [`MLPRAC.ipynb`](./MLPRAC.ipynb): Binary classification using age and salary with logistic regression.
 
 ---
 
 ## 📌 Advertisement Click Prediction
 
 - **Objective**: Predict if a user will click on an ad based on demographic and behavioral features.
-- **Features**:
-  - Daily time spent on site
-  - Age
-  - Area income
-  - Daily internet usage
-  - Gender
-- **Target**: Clicked on Ad (Yes/No)
 - **Model**: Binary Logistic Regression
-- **Steps**:
-  - Data cleaning & visualization
-  - Feature selection
-  - Train-test split
-  - Model training and prediction
-  - Evaluation using accuracy, confusion matrix, and classification report
+- **Features**: Age, Daily Time on Site, Area Income, Internet Usage, Gender
+- **Evaluation**: Accuracy, Confusion Matrix, Classification Report
 
 ---
 
 ## 🏘️ Housing Rent Category Prediction
 
-- **Objective**: Classify house rent into predefined ranges or categories.
-- **Features**:
-  - Area, BHK, Size (sqft), City, Furnishing Status, Tenant Type
-- **Target**: Rent category (e.g., Low, Medium, High)
+- **Objective**: Predict rent category (low, medium, high) based on property features.
 - **Model**: Multi-class Logistic Regression
+- **Features**: Area, BHK, Size, City, Furnishing Status, Tenant Type
+- **Evaluation**: Accuracy, Confusion Matrix
+
+---
+
+## 🧪 Logistic Regression Practice (MLPRAC)
+
+- **Objective**: Classify whether a person buys a product based on age and salary.
+- **Model**: Binary Logistic Regression
 - **Steps**:
-  - Data preprocessing and encoding
-  - Train-test split
-  - Logistic Regression for multi-class classification
-  - Model evaluation using accuracy and confusion matrix
+  - Data visualization
+  - Standardization
+  - Model training
+  - Evaluation with confusion matrix
+- **Tools**: `StandardScaler`, `train_test_split`, `LogisticRegression`
 
 ---
 
