@@ -8,44 +8,26 @@ This repository contains machine learning models using **Logistic Regression** f
 
 - [`Advertisement.ipynb`](./Advertisement.ipynb): Predict whether a user clicks on an online advertisement.
 - [`Housingrent.ipynb`](./Housingrent.ipynb): Predict housing rent category using logistic regression (classification approach).
-- [`MLPRAC.ipynb`](./MLPRAC.ipynb): Binary classification using age and salary with logistic regression.
+- [`MLPRAC.ipynb`](./MLPRAC.ipynb): Binary classification using age and salary.
+- [`Thyroid_cancer_risk.ipynb`](./Thyroid_cancer_risk.ipynb): Predict the likelihood of thyroid cancer using patient medical features.
 
 ---
 
-## 📌 Advertisement Click Prediction
+## 🧪 Thyroid Cancer Risk Prediction
 
-- **Objective**: Predict if a user will click on an ad based on demographic and behavioral features.
+- **Objective**: Classify whether a patient is at risk of thyroid cancer based on medical features.
 - **Model**: Binary Logistic Regression
-- **Features**: Age, Daily Time on Site, Area Income, Internet Usage, Gender
-- **Evaluation**: Accuracy, Confusion Matrix, Classification Report
-
----
-
-## 🏘️ Housing Rent Category Prediction
-
-- **Objective**: Predict rent category (low, medium, high) based on property features.
-- **Model**: Multi-class Logistic Regression
-- **Features**: Area, BHK, Size, City, Furnishing Status, Tenant Type
-- **Evaluation**: Accuracy, Confusion Matrix
-
----
-
-## 🧪 Logistic Regression Practice (MLPRAC)
-
-- **Objective**: Classify whether a person buys a product based on age and salary.
-- **Model**: Binary Logistic Regression
+- **Features**: Includes demographic and diagnostic features such as age, tumor characteristics, etc.
 - **Steps**:
-  - Data visualization
-  - Standardization
-  - Model training
-  - Evaluation with confusion matrix
-- **Tools**: `StandardScaler`, `train_test_split`, `LogisticRegression`
+  - Data cleaning and preprocessing
+  - Train-test split
+  - Logistic Regression model training
+  - Evaluation using classification report and accuracy
+- **Tools**: `LogisticRegression`, `train_test_split`, `classification_report`
 
 ---
 
 ## ⚙️ Requirements
-
-Install dependencies with:
 
 ```bash
 pip install pandas numpy scikit-learn matplotlib seaborn
